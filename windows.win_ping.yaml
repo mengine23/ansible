@@ -1,0 +1,6 @@
+---
+- name: Test Kerberos Authentication
+  gather_facts: false
+  tasks:
+    - name: Ensure windows host is reachable
+      ansible.windows.win_ping:
